@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de habilidades</title>
+</head>
+<body>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+
+            <label for="idH">Id:</label>
+            <input type="text" name="idH" readonly value={idH}>
+
+            <label for="descH">descrição:</label>
+            <input type="text" name="descH" value={descH}>
+
+            <label for="tipoH">tipo da habilidade:</label>
+            <input type="text" name="tipoH" value={tipoH}>
+
+            <label for="efeito">efeito:</label>
+            <input type="text" name="efeito" value={efeito}>
+
+            <button type="submit" name="acao" value="salvar">Salvar</button>
+            <button type="submit" name="acao" value="excluir">Excluir</button>
+            <input type="reset" value="Cancelar">
+        </fieldset>
+    </form>
+</body>
+</html>

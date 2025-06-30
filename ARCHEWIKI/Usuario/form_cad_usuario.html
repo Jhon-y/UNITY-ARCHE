@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+</head>
+<body>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+
+            <label for="idU">Id:</label>
+            <input type="text" name="idU" readonly value={id}>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" value={nome}>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" value={email}>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" value={senha}>
+
+            <label for="tipo">tipo:</label>
+            <select name="tipo">
+                <option value="adm">admin</option>
+                <option value="usuario">usuario</option>
+            </select>
+
+            <button type="submit" name="acao" value="salvar">Salvar</button>
+            <button type="submit" name="acao" value="excluir">Excluir</button>
+            <input type="reset" value="Cancelar">
+        </fieldset>
+    </form>
+</body>
+</html>

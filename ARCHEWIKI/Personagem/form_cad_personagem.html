@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de personagens</title>
+</head>
+<body>
+    <h1>Manutenção de personagens</h1>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+
+            <label for="idS">save:</label>
+            {idS}
+
+            <label for="idP">Id:</label>
+            <input type="text" name="idP" readonly value="{idP}">
+
+            <label for="ascendencia">ascendencia:</label>
+            <input type="text" name="ascendencia" value="{ascendencia}">
+
+            <label for="tipoP">tipo do personagem:</label>
+            <select name="tipoP">
+                <option value="player">personagem principal</option>
+                <option value="npc">NPC</option>
+                <option value="boss">boss</option>
+            </select>
+
+            <label for="nomePersonagem">nome do Personagem:</label>
+            <input type="text" name="nomePersonagem" value="{nomePersonagem}">
+
+            <label for="vida">vida:</label>
+            <input type="text" name="vida" value="{vida}">
+
+            <button type="submit" name="acao" value="salvar">Salvar</button>
+            <button type="submit" name="acao" value="excluir">Excluir</button>
+            <input type="reset" value="Cancelar">
+        </fieldset>
+    </form>
+</body>
+</html>
