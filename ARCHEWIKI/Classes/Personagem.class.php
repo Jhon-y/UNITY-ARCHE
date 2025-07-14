@@ -117,13 +117,13 @@ class Personagem {
     public static function listar($tipo = 0, $info = ''): array {
         $sql = "SELECT * FROM personagem";
         switch ($tipo) {
-            case 1:
-                $sql .= " WHERE idP = :info";
-                break;
-            case 2:
-                $sql .= " WHERE nomePersonagem LIKE :info";
-                $info = "%" . $info . "%";
-                break;
+            case 0: break;
+            case 1: $sql .= " WHERE idS = :info ORDER BY idS"; break; // filtro por ID
+            case 2: $sql .= " WHERE idP like :info ORDER BY idP"; $info = '%'.$info.'%'; break; // filtro por descrição
+            case 3: $sql .= " WHERE ascendencia like :info ORDER BY ascendencia"; $info = '%'.$info.'%'; break; // filtro por descrição
+            case 4: $sql .= " WHERE tipoP like :info ORDER BY tipoP"; $info = '%'.$info.'%'; break; // filtro por descrição        
+            case 5: $sql .= " WHERE nomePersonagem like :info ORDER BY nomePersonagem"; $info = '%'.$info.'%'; break; // filtro por descrição
+            case 6: $sql .= " WHERE vida like :info ORDER BY vida"; $info = '%'.$info.'%'; break;
         }
 
         $parametros = [];

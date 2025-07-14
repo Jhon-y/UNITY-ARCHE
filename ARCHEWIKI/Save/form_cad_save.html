@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="../style/style.css">
     <title>Cadastro de saves</title>
 </head>
 <body>
-    <h1>Manutenção de saves</h1>
     <form action="index.php" method="post" enctype="multipart/form-data">
-        <fieldset>
-
+            <div class="login ">
             <label for="idU">usuario:</label>
             {usuario}
-
+            <br><br>
             <label for="idS">Id:</label>
             <input type="text" name="idS" readonly value="{idS}">
-
+            <br><br>
             <label for="descS">descricao:</label>
             <input type="text" name="descS" value="{descS}">
-
+            <br><br>
             <label for="progresso">progresso:</label>
-            <input type="text" name="progresso" value="{progresso}"> 
-
+            <input type="number" name="progresso" value="{progresso}"> 
+            <br><br>
             <button type="submit" name="acao" value="salvar">Salvar</button>
             <button type="submit" name="acao" value="excluir">Excluir</button>
             <input type="reset" value="Cancelar">
-        </fieldset>
+            </div>
     </form>
 </body>
 </html>

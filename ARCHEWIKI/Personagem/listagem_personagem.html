@@ -1,21 +1,30 @@
-  <!-- Filtro -->
-  <form action="lista_personagem.php" method="GET">
-    <fieldset>
-        <legend>Busca</legend>
-        <label for="busca">Busca</label>
-        <input type="text" name="busca">
-        <label for="tipo">Tipo</label>
-        <select name="tipo">
-            <option value="0">Selecione</option>
-            <option value="1">ID</option>
-            <option value="2">Descrição</option>
-        </select>
-        <button type="submit">Buscar</button>
-    </fieldset>
-</form>
+<!-- Filtro -->
+<link rel="stylesheet" href="../style/styletabela.css">
+<div class="pesquisa">
+  <form action="../index.php" method="post" style="display: inline;">
+    <input type="submit" value="voltar">
+  </form>
+
+  <form action="lista_personagem.php" method="GET" style="display: inline;">
+    <input type="text" name="busca" placeholder="busca">
+    <select name="tipo">
+      <option value="0">tipo da busca</option>
+      <option value="1">ID save</option>
+      <option value="2">ID</option>
+      <option value="3">ascendencia</option>
+      <option value="4">tipo personagem</option>
+      <option value="5">nome personagem</option>
+      <option value="6">vida</option>
+    </select>
+    <button type="submit">Buscar</button>
+  </form>
+</div>
+
 <!-- Listagem -->
-<h1>Listagem de Atividades</h1>
-<table border="1">
+<br>
+<div class="table">
+  <h1>Listagem de personagens</h1>
+  <table>
     <th>Id save</th>
     <th>Id</th>
     <th>ascendencia</th>
@@ -23,4 +32,5 @@
     <th>nome do personagem</th>
     <th>vida</th>
     {itens}
-</table>
+  </table>
+</div>
