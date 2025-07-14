@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Cadastro de Usuários</title>
 </head>
 <body>
     <form action="index.php" method="post" enctype="multipart/form-data">
-        <fieldset>
-
+        
+            <div class="login ">
             <label for="idU">Id:</label>
-            <input type="text" name="idU" readonly value={id}>
+            <input type="text" name="idU" readonly value={id}><br><br>
 
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" value={nome}>
+            <input type="text" name="nome" value={nome}><br><br>
 
             <label for="email">E-mail:</label>
-            <input type="email" name="email" value={email}>
+            <input type="email" name="email" value={email}><br><br>
 
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" value={senha}>
+            <input type="password" name="senha" value={senha}><br><br>
 
             <label for="tipo">tipo:</label>
             <select name="tipo">
                 <option value="adm">admin</option>
                 <option value="usuario">usuario</option>
-            </select>
+            </select><br><br>
 
             <button type="submit" name="acao" value="salvar">Salvar</button>
             <button type="submit" name="acao" value="excluir">Excluir</button>
             <input type="reset" value="Cancelar">
-        </fieldset>
+        </div>
     </form>
 </body>
 </html>

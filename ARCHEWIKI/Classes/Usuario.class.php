@@ -95,6 +95,10 @@ class Usuario{
             case 0: break;
             case 1: $sql .= " WHERE idU = :info ORDER BY idU"; break; // filtro por ID
             case 2: $sql .= " WHERE nome like :info ORDER BY nome"; $info = '%'.$info.'%'; break; // filtro por descrição
+            case 3: $sql .= " WHERE email like :info ORDER BY email"; $info = '%'.$info.'%'; break; // filtro por descrição
+            case 4: $sql .= " WHERE senha like :info ORDER BY senha"; $info = '%'.$info.'%'; break; // filtro por descrição
+            case 5: $sql .= " WHERE tipo like :info ORDER BY tipo"; $info = '%'.$info.'%'; break; // filtro por descrição
+        
         }
         $parametros = array();
         if ($tipo > 0)

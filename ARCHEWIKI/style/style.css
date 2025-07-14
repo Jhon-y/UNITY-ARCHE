@@ -1,0 +1,26 @@
+input, button, select{
+    border-color: #454179;
+    background-color: #322f57;
+    color: #fff;
+    border-style: solid;
+}
+form{
+    text-align: center;
+}
+.login {
+    border-radius: 5px;
+    border: 2px solid #322f57;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #454179;
+    color: #fff;
+    width: 90%;
+    max-width: 500px;
+
+}
+
+body{
+    background-image: url('../img/image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
