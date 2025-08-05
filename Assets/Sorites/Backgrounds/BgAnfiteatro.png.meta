@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 42cd69c187328a7469fe0f653c8f8bea
+guid: 9129be5442611704da1c34013fd564d7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7632709811874254440
-    second: BackgrounTeste_0
+      213: -1069598842815838859
+    second: BgAnfiteatro_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgrounTeste_0
+      name: BgAnfiteatro_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 2080
+        height: 1170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 891b89dadda231690800000000000000
-      internalID: -7632709811874254440
+      spriteID: 5750bc9f4850821f0800000000000000
+      internalID: -1069598842815838859
       vertices: []
       indices: 
       edges: []
