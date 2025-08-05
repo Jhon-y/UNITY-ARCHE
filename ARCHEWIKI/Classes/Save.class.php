@@ -85,13 +85,11 @@ require_once ("Usuario.class.php");
     public static function listar($tipo = 0, $info = ''): array {
     $sql = "SELECT * FROM saves";
     switch ($tipo) {
-        case 1:
-            $sql .= " WHERE idS = :info";
-            break;
-        case 2:
-            $sql .= " WHERE descS LIKE :info";
-            $info = "%" . $info . "%";
-            break;
+            case 0: break;
+            case 1: $sql .= " WHERE idS = :info ORDER BY idS"; break; // filtro por ID
+            case 2: $sql .= " WHERE descS like :info ORDER BY descS"; $info = '%'.$info.'%'; break; // filtro por descrição
+            case 3: $sql .= " WHERE progresso like :info ORDER BY progresso"; $info = '%'.$info.'%'; break; // filtro por descrição
+            case 4: $sql .= " WHERE idU like :info ORDER BY idU"; $info = '%'.$info.'%'; break; // filtro por descrição        
     }
 
     $parametros = [];
