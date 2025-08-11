@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BgAnfiteatro_0: -1069598842815838859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

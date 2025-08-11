@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BgVulcao_0: 2564513504982028479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
