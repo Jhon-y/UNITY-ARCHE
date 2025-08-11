@@ -16,11 +16,10 @@ public class ScenesController : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
- UI
+
     public void LoadSample()
     {
         SceneManager.LoadScene("SampleScene");
     }
 
- main
 }
