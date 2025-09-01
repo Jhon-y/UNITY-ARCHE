@@ -876,7 +876,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1, y: 1.5, z: 0}
   m_MaxChunkCount: 16
@@ -50703,8 +50703,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.014614403, y: 0.0633291}
-  m_Size: {x: 0.77187026, y: 1.135469}
+  m_Offset: {x: -0.014614403, y: -0.11847025}
+  m_Size: {x: 0.77187026, y: 0.77187026}
   m_Direction: 0
 --- !u!95 &742208908
 Animator:
@@ -55342,6 +55342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8487d6dbe6e2dca40bbb50dc4cdbd3fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mensagem: "Ol\xE1, bem-vindo \xE0 vila!"
 --- !u!70 &1382685272
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -56390,6 +56391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1984243940}
   - component: {fileID: 1984243939}
+  - component: {fileID: 1984243941}
   m_Layer: 0
   m_Name: Library_0
   m_TagString: Untagged
@@ -56467,6 +56469,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &1984243941
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984243938}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.375, y: 6}
+    newSize: {x: 9.375, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.5984364, y: -1.0281296}
+      - {x: 4.1875, y: 1.25}
+      - {x: 4.0625, y: 1.5}
+      - {x: 4.0671883, y: 1.3312454}
+      - {x: 2.567192, y: 2.0406265}
+      - {x: 0.4375, y: 3}
+      - {x: -0.4375, y: 3}
+      - {x: -0.875, y: 2.8125}
+      - {x: -3.125, y: 1.875}
+      - {x: -4.125, y: 1.4375}
+      - {x: -4.1875, y: 1.25}
+      - {x: -4.6875, y: -0.6875}
+      - {x: -4.6875, y: -1.1875}
+      - {x: -4.625, y: -1.3125}
+      - {x: -4.1875, y: -1.3125}
+      - {x: -4.125, y: -3}
+      - {x: -4.012064, y: -3.083023}
+      - {x: 3.9468765, y: -3}
+      - {x: 3.9328117, y: -1.074997}
+      - {x: 4.6875, y: -1.1875}
+  m_UseDelaunayMesh: 0
 --- !u!1 &2006322597
 GameObject:
   m_ObjectHideFlags: 0
@@ -59279,6 +59348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8487d6dbe6e2dca40bbb50dc4cdbd3fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mensagem: "Ol\xE1, bem-vindo \xE0 vila!"
 --- !u!70 &2119331845
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
