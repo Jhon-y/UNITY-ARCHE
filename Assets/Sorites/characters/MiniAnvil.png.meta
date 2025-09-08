@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 42cd69c187328a7469fe0f653c8f8bea
+guid: eeb1310caf57a234297984441ba7c993
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7632709811874254440
-    second: BackgrounTeste_0
+      213: -2561797560372251098
+    second: MiniAnvil_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgrounTeste_0
+      name: MiniAnvil_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 8
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 891b89dadda231690800000000000000
-      internalID: -7632709811874254440
+      spriteID: 626bc8b11baa27cd0800000000000000
+      internalID: -2561797560372251098
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BackgrounTeste_0: -7632709811874254440
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
