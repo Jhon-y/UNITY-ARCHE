@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 16
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -417,8 +417,9 @@ GameObject:
   - component: {fileID: 124688920}
   - component: {fileID: 124688919}
   - component: {fileID: 124688921}
+  - component: {fileID: 124688922}
   m_Layer: 0
-  m_Name: "S\xF3crates_0"
+  m_Name: "S\xF3crates"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -488,8 +489,8 @@ Transform:
   m_GameObject: {fileID: 124688918}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.37, y: -5.46, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.9, y: -5.81, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -540,6 +541,40 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.47480178, y: 0.44266844}
   m_EdgeRadius: 0
+--- !u!114 &124688922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124688918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b864b4d5e1051054a910968ad2a916b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 353269047049120599, guid: a3f3dc65150c0f6428f161a749aaeb9f, type: 3}
+  speechTxt:
+  - "Eu nada imponho, apenas pergunto. Pois \xE9 no di\xE1logo, na troca constante,
+    que ajudamos uns aos outros a dar \xE0 luz ideias verdadeiras. A mente se ilumina
+    quando \xE9 provocada a pensar."
+  - "Se existe algo que aprendi, \xE9 isto: reconhecer a pr\xF3pria ignor\xE2ncia
+    \xE9 o primeiro passo para a sabedoria. Quem acredita saber tudo fecha as portas
+    do esp\xEDrito; quem admite n\xE3o saber abre caminho para aprender."
+  - "Acredito que ningu\xE9m pratica o mal por escolha. Fazemos o errado porque desconhecemos
+    o bem. Por isso, buscar o conhecimento \xE9 tamb\xE9m buscar a virtude \u2014
+    entender o que \xE9 justo nos conduz a agir justamente."
+  - "Examine-se. Questione seus pensamentos, suas atitudes e seus motivos. Uma vida
+    sem reflex\xE3o \xE9 como navegar sem rumo. Quanto mais nos conhecemos, mais
+    pr\xF3ximos estamos do bem e da verdadeira sabedoria."
+  - "N\xE3o escrevo livros, pois minha filosofia vive no di\xE1logo e na alma de
+    quem pensa. Meus disc\xEDpulos continuar\xE3o essas ideias, mas a busca pela
+    verdade pertence a todos os que ousam perguntar."
+  actorName: "S\xF3crates"
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  radious: 1
 --- !u!1 &241810054
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,7 +602,7 @@ RectTransform:
   m_GameObject: {fileID: 241810054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719581758}
@@ -13933,6 +13968,275 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &393644978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 393644979}
+  - component: {fileID: 393644982}
+  - component: {fileID: 393644981}
+  - component: {fileID: 393644980}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &393644979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393644978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 454649045}
+  m_Father: {fileID: 1475611951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 243.5, y: -66.4}
+  m_SizeDelta: {x: 76.667, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &393644980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393644978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 393644981}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1282626166}
+        m_TargetAssemblyTypeName: DialogueControl, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &393644981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393644978}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &393644982
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393644978}
+  m_CullTransparentMesh: 1
+--- !u!1 &454649044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454649045}
+  - component: {fileID: 454649047}
+  - component: {fileID: 454649046}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &454649045
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454649044}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 393644979}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000019073486, y: -0.000024795532}
+  m_SizeDelta: {x: 0, y: -0.000049591}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &454649046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454649044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Avan\xE7ar"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c202e4bd0b3e11242963ce4cf0511d9d, type: 2}
+  m_sharedMaterial: {fileID: 7300729173383537591, guid: c202e4bd0b3e11242963ce4cf0511d9d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 2566914047
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.59607846}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &454649047
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454649044}
+  m_CullTransparentMesh: 1
 --- !u!1 &533957386
 GameObject:
   m_ObjectHideFlags: 0
@@ -14130,7 +14434,7 @@ GameObject:
   - component: {fileID: 604255950}
   - component: {fileID: 604255949}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Speech
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14143,17 +14447,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604255947}
-  m_LocalRotation: {x: -0, y: -0, z: 0.011544297, w: 0.99993336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1475611951}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.323}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 86}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 81.74476, y: 0.529}
+  m_SizeDelta: {x: 380.5923, y: 152.624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604255949
 MonoBehaviour:
@@ -14175,7 +14479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: teste
+  m_text: ' '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c202e4bd0b3e11242963ce4cf0511d9d, type: 2}
   m_sharedMaterial: {fileID: 7300729173383537591, guid: c202e4bd0b3e11242963ce4cf0511d9d, type: 2}
@@ -14202,14 +14506,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -14240,7 +14544,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.49804682, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -14281,7 +14585,7 @@ RectTransform:
   m_GameObject: {fileID: 619705735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719581758}
@@ -14356,7 +14660,7 @@ RectTransform:
   m_GameObject: {fileID: 640870901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719581758}
@@ -14508,8 +14812,9 @@ GameObject:
   - component: {fileID: 742414358}
   - component: {fileID: 742414357}
   - component: {fileID: 742414359}
+  - component: {fileID: 742414360}
   m_Layer: 0
-  m_Name: "Her\xE1clito_0"
+  m_Name: "Her\xE1clito"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14579,8 +14884,8 @@ Transform:
   m_GameObject: {fileID: 742414356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31, y: -0.16, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.81, y: 0.21, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -14631,6 +14936,40 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.49696255, y: 0.41008115}
   m_EdgeRadius: 0
+--- !u!114 &742414360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742414356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b864b4d5e1051054a910968ad2a916b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: -4547019039504183724, guid: 3b596dd0daeabe14dbcb355625e9b11e, type: 3}
+  speechTxt:
+  - "Nada permanece. Tudo est\xE1 sempre mudando, assim como o rio que nunca \xE9
+    o mesmo. Quem n\xE3o aprende a ver o movimento nas coisas n\xE3o compreende a
+    pr\xF3pria natureza do mundo."
+  - "O fogo \xE9 o cora\xE7\xE3o do cosmos: transforma, consome e renova. \xC9 a
+    imagem da mudan\xE7a constante \u2014 a for\xE7a que mant\xE9m o universo vivo
+    e em perp\xE9tuo devir."
+  - "N\xE3o se assuste com os contr\xE1rios. Guerra e paz, noite e dia\u2026 todos
+    se equilibram num \xFAnico todo. Os opostos lutam, mas tamb\xE9m se completam,
+    revelando a harmonia escondida do mundo."
+  - "H\xE1 uma raz\xE3o que governa tudo, silenciosa e eterna. Poucos a percebem,
+    pois vivem distra\xEDdos. Mas quem escuta o Logos entende a ordem profunda que
+    sustenta o caos aparente."
+  - "Viver \xE9 mudar. E compreender essa mudan\xE7a \xE9 aprender a pensar. Minha
+    vis\xE3o do mundo em fluxo inspirar\xE1 muitos que vir\xE3o depois \u2014 pois
+    tudo se transforma, at\xE9 mesmo o pensamento humano."
+  actorName: "Her\xE1clito"
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  radious: 1
 --- !u!1 &763224946
 GameObject:
   m_ObjectHideFlags: 0
@@ -14965,7 +15304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -15283,8 +15622,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230, y: -92}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -209.8, y: -70}
+  m_SizeDelta: {x: 137.3654, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924358187
 MonoBehaviour:
@@ -15335,14 +15674,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -15373,7 +15712,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 124.43047, w: 29.690166}
+  m_margin: {x: 0, y: 0, z: 2.5293083, w: 29.690166}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -24067,6 +24406,55 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1282626164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282626165}
+  - component: {fileID: 1282626166}
+  m_Layer: 0
+  m_Name: DialogueControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282626165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282626164}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.65956116, y: -3.0621796, z: -0.01459428}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282626166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282626164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f69657a9b8699d4996456ca30656295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObj: {fileID: 1475611950}
+  profile: {fileID: 2057906421}
+  speechText: {fileID: 604255949}
+  actorNameText: {fileID: 924358187}
+  typingSpeed: 0
 --- !u!1 &1310209595
 GameObject:
   m_ObjectHideFlags: 0
@@ -24618,7 +25006,7 @@ RectTransform:
   m_GameObject: {fileID: 1455413663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719581758}
@@ -24728,7 +25116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1475611951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24741,14 +25129,16 @@ RectTransform:
   m_LocalScale: {x: 1, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 393644979}
   - {fileID: 604255948}
   - {fileID: 924358186}
+  - {fileID: 2057906419}
   m_Father: {fileID: 110342657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8, y: -284}
-  m_SizeDelta: {x: 1026.721, y: 479.4676}
+  m_AnchoredPosition: {x: 13, y: -156}
+  m_SizeDelta: {x: 710.6066, y: 197.9296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1475611952
 MonoBehaviour:
@@ -25147,8 +25537,9 @@ GameObject:
   - component: {fileID: 1594743202}
   - component: {fileID: 1594743201}
   - component: {fileID: 1594743203}
+  - component: {fileID: 1594743204}
   m_Layer: 0
-  m_Name: "Arist\xF3teles_0"
+  m_Name: "Arist\xF3teles"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25218,8 +25609,8 @@ Transform:
   m_GameObject: {fileID: 1594743200}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.94, y: -1.26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.64, y: -0.78, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -25270,6 +25661,43 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.46351624, y: 0.42009807}
   m_EdgeRadius: 0
+--- !u!114 &1594743204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594743200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b864b4d5e1051054a910968ad2a916b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 5153443766821148313, guid: 0438de861ebb2424296a859fdb1c2774, type: 3}
+  speechTxt:
+  - "Para compreender o mundo, devemos come\xE7ar pelo que vemos e experimentamos.
+    A verdadeira investiga\xE7\xE3o nasce da observa\xE7\xE3o, e a l\xF3gica \xE9
+    o fio que une cada descoberta. \xC9 assim que transformamos experi\xEAncia em
+    conhecimento."
+  - "Nada existe sem uma explica\xE7\xE3o completa. Toda coisa tem sua mat\xE9ria,
+    sua forma, quem a produziu e a finalidade para a qual existe. Quando entendemos
+    essas quatro causas, entendemos a ess\xEAncia do ser."
+  - "A felicidade n\xE3o \xE9 um instante, mas um modo de viver. Ela surge quando
+    encontramos o meio-termo entre os excessos. A virtude \xE9 esse equil\xEDbrio:
+    coragem, n\xE3o temeridade; generosidade, n\xE3o exagero. Assim constru\xEDmos
+    uma vida plena."
+  - "O ser humano nasce para a vida em comunidade. Somos animais pol\xEDticos porque
+    s\xF3 juntos podemos alcan\xE7ar o bem comum. Uma cidade justa \xE9 aquela onde
+    cada cidad\xE3o contribui para a harmonia e recebe o que lhe \xE9 devido."
+  - "Tudo carrega dentro de si um potencial. A semente pode tornar-se \xE1rvore,
+    a crian\xE7a pode tornar-se s\xE1bia. O universo \xE9 movimento: passagem da
+    pot\xEAncia ao ato. E acima de tudo existe o Motor Im\xF3vel, a causa primeira
+    que impulsiona o cosmos."
+  actorName: "Arist\xF3teles"
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  radious: 1
 --- !u!1 &1641596777
 GameObject:
   m_ObjectHideFlags: 0
@@ -25281,8 +25709,9 @@ GameObject:
   - component: {fileID: 1641596779}
   - component: {fileID: 1641596778}
   - component: {fileID: 1641596780}
+  - component: {fileID: 1641596781}
   m_Layer: 0
-  m_Name: "Pit\xE1goras_0"
+  m_Name: "Pit\xE1goras"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25352,8 +25781,8 @@ Transform:
   m_GameObject: {fileID: 1641596777}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.89, y: -2.81, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.83, y: -2.76, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -25404,6 +25833,41 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.47104907, y: 0.3948393}
   m_EdgeRadius: 0
+--- !u!114 &1641596781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641596777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b864b4d5e1051054a910968ad2a916b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 8425699751745238071, guid: 7dd371e72c658964ba3177345ea1a906, type: 3}
+  speechTxt:
+  - "Tudo o que existe pode ser compreendido pelos n\xFAmeros. Eles s\xE3o a ess\xEAncia
+    do universo, a estrutura invis\xEDvel que sustenta cada forma, cada ritmo e cada
+    ordem. Quem entende os n\xFAmeros, entende o pr\xF3prio mundo."
+  - "Olha para o c\xE9u e escuta: h\xE1 uma m\xFAsica tocando no movimento dos astros.
+    O cosmos inteiro segue propor\xE7\xF5es perfeitas, como as notas de uma can\xE7\xE3o
+    eterna. A harmonia do universo \xE9 matem\xE1tica, e n\xF3s somos parte dessa
+    melodia."
+  - "A alma n\xE3o morre. Ela apenas troca de morada. Ap\xF3s cada vida, seguimos
+    adiante, renascendo em novos corpos, buscando purificar-nos pelo conhecimento
+    e pela virtude. Cada exist\xEAncia \xE9 uma nova chance de aprender."
+  - "Viver bem \xE9 viver com disciplina. Modera\xE7\xE3o, equil\xEDbrio, respeito
+    aos seres vivos \u2014 tudo isso fortalece a alma. A simplicidade do corpo abre
+    espa\xE7o para a grandeza do esp\xEDrito. Nada em excesso, tudo em harmonia."
+  - "Se minhas ideias sobreviverem, que seja para inspirar aqueles que buscam unir
+    raz\xE3o e espiritualidade. A matem\xE1tica n\xE3o \xE9 apenas c\xE1lculo: \xE9
+    um caminho para compreender a ordem divina do mundo."
+  actorName: "Pit\xE1goras"
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  radious: 1
 --- !u!1 &1719581757
 GameObject:
   m_ObjectHideFlags: 0
@@ -25444,8 +25908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 115, y: -12.5}
-  m_SizeDelta: {x: -230, y: -25}
+  m_AnchoredPosition: {x: 5, y: -5}
+  m_SizeDelta: {x: -10, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719581759
 MonoBehaviour:
@@ -25465,7 +25929,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: -1410
+  m_Spacing: -600
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -25502,7 +25966,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 16
 --- !u!222 &1719581761
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25522,8 +25986,9 @@ GameObject:
   - component: {fileID: 1725431662}
   - component: {fileID: 1725431661}
   - component: {fileID: 1725431663}
+  - component: {fileID: 1725431664}
   m_Layer: 0
-  m_Name: "Plat\xE3o_0"
+  m_Name: "Plat\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25593,8 +26058,8 @@ Transform:
   m_GameObject: {fileID: 1725431660}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.89, y: -4.35, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.61, y: -4.61, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -25645,6 +26110,44 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5086577, y: 0.34631252}
   m_EdgeRadius: 0
+--- !u!114 &1725431664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725431660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b864b4d5e1051054a910968ad2a916b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: -6570570945287344895, guid: 9e2df75b46c4e6a43ba1c3dd761f2098, type: 3}
+  speechTxt:
+  - "O que v\xEAs ao teu redor \xE9 apenas uma sombra da verdadeira realidade. Existe
+    um mundo perfeito de Ideias, onde cada coisa possui sua forma mais pura. O mundo
+    sens\xEDvel \xE9 apenas uma c\xF3pia \u2014 bela, mas imperfeita. Para compreender
+    o real, \xE9 preciso olhar al\xE9m dos sentidos e buscar o que s\xF3 a raz\xE3o
+    alcan\xE7a."
+  - "N\xE3o te enganes: aprender n\xE3o \xE9 descobrir algo novo, mas recordar. Antes
+    de teu nascimento, tua alma contemplou todas as Ideias eternas. A cada verdade
+    que reconheces, tua alma apenas desperta aquilo que j\xE1 sabia. Conhecer \xE9
+    lembrar."
+  - "A alma humana possui tr\xEAs for\xE7as. A raz\xE3o, que deve governar; a coragem,
+    que lhe d\xE1 vigor; e os desejos, que impulsionam o corpo. A verdadeira justi\xE7a
+    nasce quando cada parte cumpre seu papel, e a raz\xE3o guia as outras com sabedoria."
+  - "A cidade justa s\xF3 floresce quando guiada por aqueles que amam a verdade.
+    Por isso digo que os fil\xF3sofos devem governar: n\xE3o porque desejam o poder,
+    mas porque compreendem o bem. Somente quem v\xEA a luz pode conduzir os que ainda
+    caminham entre sombras."
+  - "Talvez muito tempo passe ap\xF3s minha voz silenciar. Ainda assim, espero que
+    minhas ideias acompanhem aqueles que buscam a virtude e a raz\xE3o. Pois enquanto
+    houver quem questione e reflita, minhas palavras continuar\xE3o vivas."
+  actorName: "Plat\xE3o"
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  radious: 1
 --- !u!1 &1744773440
 GameObject:
   m_ObjectHideFlags: 0
@@ -25768,7 +26271,7 @@ RectTransform:
   m_GameObject: {fileID: 1982252371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719581758}
@@ -26304,6 +26807,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2057906418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057906419}
+  - component: {fileID: 2057906420}
+  - component: {fileID: 2057906421}
+  m_Layer: 5
+  m_Name: Profile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2057906419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057906418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1475611951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -211, y: 18}
+  m_SizeDelta: {x: 104.7851, y: 103.003}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2057906420
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057906418}
+  m_CullTransparentMesh: 1
+--- !u!114 &2057906421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057906418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -26340,3 +26918,4 @@ SceneRoots:
   - {fileID: 1725431662}
   - {fileID: 124688920}
   - {fileID: 998517420}
+  - {fileID: 1282626165}
