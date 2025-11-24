@@ -24,8 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/World/PassScene.unity
     guid: 30f485161f6ae7f42aea6b37142c98eb
   - enabled: 1
-    path: Assets/Scenes/World/LibraryScene.unity
+    path: Assets/Scenes/World/LibraryAreaScene.unity
     guid: 5af3620bdfc82734f9fff9b74b14713f
+  - enabled: 1
+    path: Assets/Scenes/World/LibraryScene.unity
+    guid: 070c515999c964d43ac12efcf22318ad
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

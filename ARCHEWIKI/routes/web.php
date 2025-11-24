@@ -56,14 +56,24 @@ Route::get('/saves', function () {
 |--------------------------------------------------------------------------
 | 🧩 Páginas públicas (listagem dos dados)
 |--------------------------------------------------------------------------
+|
+| Aqui corrigimos o problema: agora /app/spaces carrega a view correta,
+| sem chamar o controller que tentava abrir admin.spaces.index.
+|
 */
 Route::get('/app/characters', [CharacterController::class, 'index'])->name('characters');
 Route::get('/app/skills', [SkillController::class, 'index'])->name('skills');
-Route::get('/app/spaces', [SpaceController::class, 'index'])->name('spaces');
 
-// ----------------------
-// 🧙‍♂️ Área do Admin
-// ----------------------
+// ✔ CORRIGIDO — usando a view pública
+Route::get('/app/spaces', function () {
+    return view('app.spaces');
+})->name('spaces');
+
+/*
+|--------------------------------------------------------------------------
+| 🧙‍♂️ Área do Admin
+|--------------------------------------------------------------------------
+*/
 Route::middleware(['admin'])->group(function () {
 
     // Painel principal do admin
@@ -73,23 +83,39 @@ Route::middleware(['admin'])->group(function () {
     })->name('admin.index');
 
     // Characters
-    Route::get('/admin/characters', function () {
-        return redirect()->route('admin.index'); // Redireciona para a página inicial do painel
-    })->name('admin.characters.index');
+    Route::get('/app/characters', function () {
+        return view('app.characters');
+    })->name('characters');
+
+    Route::get('/app/characters', function () {
+        $characters = \App\Models\Character::all();
+        return view('app.characters', compact('characters'));
+    })->name('characters');
+
+
+
+    Route::get('/app/spaces', function () {
+        $spaces = \App\Models\Space::all();
+        return view('app.spaces', compact('spaces'));
+    })->name('spaces');
+
+
     Route::get('/admin/characters/create', [CharacterController::class, 'create'])->name('admin.characters.create');
     Route::post('/admin/characters/store', [CharacterController::class, 'store'])->name('admin.characters.store');
 
     // Skills
     Route::get('/admin/skills', function () {
-        return redirect()->route('admin.index'); // Redireciona para a página inicial do painel
+        return redirect()->route('admin.index');
     })->name('admin.skills.index');
+
     Route::get('/admin/skills/create', [SkillController::class, 'create'])->name('admin.skills.create');
     Route::post('/admin/skills/store', [SkillController::class, 'store'])->name('admin.skills.store');
 
     // Spaces
     Route::get('/admin/spaces', function () {
-        return redirect()->route('admin.index'); // Redireciona para a página inicial do painel
+        return redirect()->route('admin.index');
     })->name('admin.spaces.index');
+
     Route::get('/admin/spaces/create', [SpaceController::class, 'create'])->name('admin.spaces.create');
     Route::post('/admin/spaces/store', [SpaceController::class, 'store'])->name('admin.spaces.store');
 });
